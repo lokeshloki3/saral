@@ -1,0 +1,132 @@
+/* Reset margins and paddings */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #E0E7FF;
+    color: black;
+}
+
+header {
+
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: #4338CA;
+    padding: 10px 0;
+    text-align: center;
+    /* Navbar links color */
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+}
+
+.navbar a {
+    /* Underline removed from links */
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a:hover {
+    color: red;
+}
+
+#home, #about, #contact {
+    padding-top: 50px;
+}
+
+main {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    background-color: #4338CA;
+    padding: 10px 0;
+}
+
+footer p {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .navbar a {
+        font-size: 1em;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
